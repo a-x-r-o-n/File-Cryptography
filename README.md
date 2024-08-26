@@ -1,4 +1,4 @@
-Here is a `README.md` file for your project based on the provided files:
+Read the  `README.md` file before using the repo
 
 ---
 
@@ -56,4 +56,3 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-Make sure to adjust any specifics if needed based on your actual project content.
