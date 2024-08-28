@@ -1,36 +1,40 @@
-Read the  `README.md` file before using the repo
+
+Read the `README.md` file before using the repo
 
 ---
 
-# Cipher Message Decoder
+# File Cryptography
 
 ## Project Overview
 
-This project involves a simple Python script that decodes a ciphered message from a given text file. The script takes a message encrypted using a basic substitution cipher and decodes it into readable text. 
+This project involves a Python script that performs encryption and decryption on text files using a Caesar cipher. The script allows users to encrypt a plain text message or decrypt an already ciphered message.
 
 ## Project Structure
 
-- **`main.py`**: The main Python script that handles the decoding process.
-- **`cipher.txt`**: Contains the encrypted message that needs to be decoded.
-- **`message.txt`**: Contains the decoded message after running the script.
+- **`main.py`**: The main Python script that handles user input and controls the encryption and decryption processes.
+- **`module.py`**: Contains the core functions for encrypting, decrypting, and handling files.
+- **`cipher.txt`**: The output file where the encrypted message is saved.
+- **`message.txt`**: The input file containing the original message for encryption or the decrypted message after running the script.
 
 ## How It Works
 
-The Python script in `main.py` reads the ciphered text from `cipher.txt`, applies the decoding algorithm, and then writes the decoded message into `message.txt`.
+The Python script in `main.py` allows the user to choose between encryption and decryption:
+1. **Encryption**: The script reads the plain text from `message.txt`, encrypts it using a Caesar cipher, and saves the result in `cipher.txt`.
+2. **Decryption**: The script reads the ciphered text from `cipher.txt`, decrypts it, and saves the readable message in `message.txt`.
 
 ### Steps:
 
-1. **Read Ciphered Text**: The script reads the encrypted message from the `cipher.txt` file.
-2. **Decode Message**: It applies the decoding logic to translate the ciphered text into a readable message.
-3. **Output**: The decoded message is saved to the `message.txt` file.
+1. **User Instructions**: The script prompts the user to follow guidelines and then proceed with encryption or decryption.
+2. **Process Selection**: Choose `E` for encryption or `D` for decryption.
+3. **File Handling**: The script reads from `message.txt` or `cipher.txt` depending on the operation, processes the text, and writes the output to the appropriate file.
 
 ## Usage
 
 1. Clone this repository to your local machine.
 2. Ensure you have Python installed.
-3. Place the ciphered text in `cipher.txt`.
+3. Place the plain text in `message.txt` for encryption or the ciphered text in `cipher.txt` for decryption.
 4. Run the `main.py` script.
-5. The decoded message will be available in `message.txt`.
+5. The output will be available in `cipher.txt` (for encryption) or `message.txt` (for decryption).
 
 ### Running the Script
 
@@ -41,18 +45,19 @@ python main.py
 ## Example
 
 **Before Running the Script:**
-- `cipher.txt` contains: `_z+q}tpyo~+p}p+~ttyr+ty+sp+~nszzw...`
+- `message.txt` contains: `Jesus is King!!`
+- `cipher.txt` will store the encrypted text.
 
 **After Running the Script:**
-- `message.txt` contains: `"Two friends were sitting in the school cafeteria..."`
+- `cipher.txt` contains: `?Zhjh^h@^c\`
+- `message.txt` contains the decrypted message.
 
 ## Author
 
-This project was created to demonstrate a basic example of working with ciphers in Python.
+This project was created to demonstrate basic file encryption and decryption using a Caesar cipher in Python.
 
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
 ---
-
